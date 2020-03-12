@@ -3,9 +3,18 @@
 @import 'typography';
 
 body {
-    background: #fafafa;
+    background-color:black;
+    background-image:
+    radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+    radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+    
     display: flex;
     flex-direction: column;
+    justify-content: center;
     min-height: 100vh;
 }
 
@@ -13,8 +22,10 @@ body {
     flex: 1 0 auto;
 
     &.four-oh-four {
-        display: flex;
-        flex-direction: column;
+        display: block;
+        justify-content: center;
+        // display: flex;
+        // flex-direction: column;
         justify-content: center;
         align-items: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -26,10 +37,69 @@ body {
     }
 }
 
+h1 {
+    font-size: 40px;
+    margin: 10px;
+    color: cyan;
+}
+
 .content {
-    display: flex;
-    flex-direction: column;
-    margin-top: 24px;
+    display: block;
+    justify-content: center;
+    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 20px;
+    
+    background: rgb(255,228,90);
+    background: radial-gradient(circle, rgba(255,228,90,1) 0%, rgba(255,144,144,1) 100%);    border: 5px outset #1C6EA4;;
+    box-shadow: 0 0 20px cyan;
+    border-radius: 4px;
+
+    width: 500px;
+    height: 500px;
+}
+
+.gallow {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+}
+
+.start {
+    display: block;
+    color: dodgerblue;
+    width: 200px;
+    height: 100px;
+    border: none;
+    border-radius: 4px;
+    margin: 40px auto;
+}
+
+.letter-container {
+    display: none;
+    width: 400px;
+    height: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 70px 20px 20px;
+    padding: 5px;
+}
+
+.used-letters {
+    display: none;
+    width: 400px;
+    height: auto;
+    color: dodgerblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin: 20px;
+    padding: 5px;
 }
 
 .box {

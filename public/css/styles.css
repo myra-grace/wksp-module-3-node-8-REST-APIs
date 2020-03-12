@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Roboto+Slab:300&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+ol, ul {
+  margin-bottom: 1em; }
+
+h1, h2, h3, h4 {
+  font-family: 'Roboto', sans-serif; }
+
+h1 {
+  font-size: 36px; }
+
+h2 {
+  font-size: 32px; }
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 1em; }
+
+h4 {
+  font-size: 20px; }
+
+p, li, a, blockquote, span {
+  font-family: 'Roboto Slab', serif;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.5em; }
+
+code, codeblock {
+  background: #eaeaea;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+  padding: 0 4px; }
+
+codeblock {
+  display: block;
+  margin: 12px 32px 6px 0;
+  padding: 12px 14px; }
+
+body {
+  background-color: black;
+  background-image: radial-gradient(white, rgba(255, 255, 255, 0.2) 2px, transparent 40px), radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px), radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px), radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh; }
+
+.main {
+  flex: 1 0 auto; }
+  .main.four-oh-four {
+    display: block;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: slategray; }
+    .main.four-oh-four .title {
+      font-size: 96px; }
+
+h1 {
+  font-size: 40px;
+  margin: 10px;
+  color: cyan; }
+
+.content {
+  display: block;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 20px;
+  background: #ffe45a;
+  background: radial-gradient(circle, #ffe45a 0%, #ff9090 100%);
+  border: 5px outset #1C6EA4;
+  box-shadow: 0 0 20px cyan;
+  border-radius: 4px;
+  width: 500px;
+  height: 500px; }
+
+.gallow {
+  width: 250px;
+  height: 250px;
+  margin: auto; }
+
+.start {
+  display: block;
+  color: dodgerblue;
+  width: 200px;
+  height: 100px;
+  border: none;
+  border-radius: 4px;
+  margin: 40px auto; }
+
+.letter-container {
+  display: none;
+  width: 400px;
+  height: auto;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin: 70px 20px 20px;
+  padding: 5px; }
+
+.used-letters {
+  display: none;
+  width: 400px;
+  height: auto;
+  color: dodgerblue;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  margin: 20px;
+  padding: 5px; }
+
+.box {
+  border: 1px solid #707070;
+  flex: 0 0 49%;
+  margin-bottom: 24px;
+  min-height: 200px;
+  padding: 18px; }
+
+.question .sample {
+  border: 1px solid #cacaca;
+  margin: 12px 32px 6px 0;
+  padding: 12px 14px; }
+
+@media screen and (min-width: 900px) {
+  .content {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 500px; } }
